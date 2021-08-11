@@ -1,0 +1,111 @@
+/* add css module styles here (optional) */
+
+.test {
+  margin: 2em;
+  padding: 0.5em;
+  border: 2px solid #000;
+  font-size: 2em;
+  text-align: center;
+}
+
+button[type="primary"] {
+  background-color: yellow;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+button{
+  text-transform: none;
+  line-height: 1.5715;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  border: 1px solid transparent;
+  box-shadow: 0 2px #00000004;
+  cursor: pointer;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  height: 32px;
+  padding: 4px 15px;
+  font-size: 14px;
+  border-radius: 2px;
+  color: #000000d9;
+  border-color: #d9d9d9;
+  background: #fff;
+}
+
+button[type="primary"] {
+  color: #fff;
+  border-color: #1890ff;
+  background: #1890ff;
+  text-shadow: 0 -1px 0 rgb(0 0 0 );
+  box-shadow: 0 2px #0000000b;
+}
+button:hover, button:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: #fff;
+}
+
+
+button[type="primary"]:hover, button[type="primary"]:focus {
+  color: #fff;
+  border-color: #40a9ff;
+  background: #40a9ff;
+}
+button[type="dashed"]{
+  color: #000000d9;
+  border-color: #d9d9d9;
+  background: #fff;
+  border-style: dashed;
+}
+button[type="text"]{
+  color: #000000d9;
+  border-color: transparent;
+  background: 0 0;
+  box-shadow: none;
+}
+
+button[type="link"] {
+  color: #1890ff;
+  border-color: transparent;
+  background: 0 0;
+  box-shadow: none;
+}
+
+button[type="primary"]:hover, button[type="primary"]:focus {
+  color: #fff;
+  border-color: #40a9ff;
+  background: #40a9ff;
+}
+
+button[type="dashed"]:hover, button[type="dashed"]:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: #fff;
+}
+
+button[type="text"]:hover, button[type="text"]:focus {
+  color: #000000d9;
+  background: rgba(0,0,0,.018);
+  border-color: transparent;
+}

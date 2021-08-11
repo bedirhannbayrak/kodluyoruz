@@ -1,16 +1,17 @@
 import {
     Alert,
-    Box, Button,
+    Box,
+    Button,
     Flex,
     FormControl,
     FormLabel,
     Heading,
-    Input
-} from '@chakra-ui/react'
-import {useFormik} from 'formik'
-import validationSchema from './validation'
-import {fetchRegister} from '../../../api'
-import {useAuth} from '../../../Contexts/AuthContext'
+    Input,
+} from '@chakra-ui/react';
+import { useFormik } from 'formik';
+import validationSchema from './validation';
+import { fetchRegister } from '../../../api';
+import { useAuth } from '../../../Contexts/AuthContext';
 
 const Signup = ({history}) => {
 

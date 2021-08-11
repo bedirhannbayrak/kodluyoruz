@@ -3,7 +3,7 @@ import { deleteProduct, fetchProductList } from '../../../api';
 import { Popconfirm, Table } from 'antd';
 import { Link } from 'react-router-dom';
 import { useMemo } from 'react';
-import { Button, Heading } from '@chakra-ui/react';
+import { Button, Flex, Heading } from '@chakra-ui/react';
 
 const Products = () => {
 
@@ -67,13 +67,13 @@ const Products = () => {
 	}
 
 	return (
-		<>
+		<Flex flexDir="column" w="100%" px="5">
 			<Heading mb="4" textAlign="center">Products</Heading>
 			<Link to={{pathname: 'products/new'}}><Button mb="2" float="right"> Add
 				Product</Button></Link>
 
 			<Table columns={columns} dataSource={data} rowKey="_id"/>
-		</>
+		</Flex>
 	);
 };
 

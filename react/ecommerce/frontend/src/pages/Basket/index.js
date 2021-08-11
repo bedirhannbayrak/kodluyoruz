@@ -6,7 +6,7 @@ import {
 	Button,
 	Flex,
 	FormControl,
-	FormLabel, Heading,
+	FormLabel,
 	Image,
 	Link,
 	Modal,
@@ -15,7 +15,8 @@ import {
 	ModalContent,
 	ModalFooter,
 	ModalHeader,
-	ModalOverlay, Text,
+	ModalOverlay,
+	Text,
 	Textarea,
 	useDisclosure,
 } from '@chakra-ui/react';

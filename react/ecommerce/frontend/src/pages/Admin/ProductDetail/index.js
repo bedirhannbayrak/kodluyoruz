@@ -2,7 +2,9 @@ import { useParams } from 'react-router-dom';
 import { useQuery } from 'react-query';
 import { fetchProduct, updateProduct } from '../../../api';
 import {
-	Box, Button, Flex,
+	Box,
+	Button,
+	Flex,
 	FormControl,
 	FormLabel,
 	Input,
@@ -50,7 +52,7 @@ const ProductDetail = () => {
 	};
 
 	return (
-		<>
+		<Flex alignItems="center" w="100%" flexDir="column" >
 			<Text fontSize="2xl"> Edit</Text>
 			<Formik initialValues={{
 				title: data.title,
@@ -71,8 +73,8 @@ const ProductDetail = () => {
 						 values,
 						 isSubmitting,
 					 }) =>
-						<>
-							<Box pb="20">
+						<Flex justifyContent="center" w="100%" >
+							<Box w="80%" pb="20">
 								<Box my="5">
 									<form onSubmit={handleSubmit}>
 										<FormControl>
@@ -166,10 +168,10 @@ const ProductDetail = () => {
 									</form>
 								</Box>
 							</Box>
-						</>
+						</Flex>
 				}
 			</Formik>
-		</>
+		</Flex>
 	);
 
 };

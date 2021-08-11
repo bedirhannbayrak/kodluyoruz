@@ -1,7 +1,7 @@
-import {Box,Image,Button} from '@chakra-ui/react'
-import {Link} from 'react-router-dom'
-import moment from "moment"
-import {useBasket} from '../../Contexts/BasketContext'
+import { Box, Button, Image } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
+import moment from 'moment';
+import { useBasket } from '../../Contexts/BasketContext';
 
 const Card = ({item}) => {
     const {addToBasket,items} =  useBasket()

@@ -1,6 +1,7 @@
-
 import {
-	Box, Button, Flex,
+	Box,
+	Button,
+	Flex,
 	FormControl,
 	FormLabel,
 	Input,
@@ -11,7 +12,7 @@ import { FieldArray, Formik } from 'formik';
 import validationSchema from './validation';
 import { message } from 'antd';
 import { postProduct } from '../../../../api';
-import { useMutation,useQueryClient } from 'react-query';
+import { useMutation, useQueryClient } from 'react-query';
 
 const AddProduct = () => {
 
@@ -45,7 +46,7 @@ const AddProduct = () => {
 	};
 
 	return (
-		<>
+		<Flex alignItems="center" w="100%" flexDir="column">
 			<Text fontSize="2xl"> Add Product</Text>
 			<Formik initialValues={{
 				title: "",
@@ -66,8 +67,8 @@ const AddProduct = () => {
 						 values,
 						 isSubmitting,
 					 }) =>
-						<>
-							<Box pb="20">
+						<Flex justifyContent="center" w="100%">
+							<Box  w="80%" pb="20">
 								<Box my="5">
 									<form onSubmit={handleSubmit}>
 										<FormControl>
@@ -161,10 +162,10 @@ const AddProduct = () => {
 									</form>
 								</Box>
 							</Box>
-						</>
+						</Flex>
 				}
 			</Formik>
-		</>
+		</Flex>
 	);
 
 };

@@ -1,6 +1,6 @@
-import {createContext, useContext, useEffect, useState} from 'react'
-import {fetchLogout, fetchMe} from '../api'
-import {Flex, Spinner} from '@chakra-ui/react'
+import { createContext, useContext, useEffect, useState } from 'react';
+import { fetchLogout, fetchMe } from '../api';
+import { Flex, Spinner } from '@chakra-ui/react';
 
 const AuthContext = createContext()
 
@@ -32,6 +32,7 @@ export const AuthProvider = ({children}) => {
     }
 
     const logout = async (cb)=> {
+        console.log("logoout calisti");
         setLoggedIn(false)
         setUser(null)
         await fetchLogout()

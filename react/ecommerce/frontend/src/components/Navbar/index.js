@@ -1,9 +1,9 @@
-import styles from './styles.module.css'
-import React from 'react'
-import {Link} from 'react-router-dom'
+import styles from './styles.module.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button, Text } from '@chakra-ui/react';
-import {useAuth} from '../../Contexts/AuthContext'
-import {useBasket} from '../../Contexts/BasketContext'
+import { useAuth } from '../../Contexts/AuthContext';
+import { useBasket } from '../../Contexts/BasketContext';
 
 const Navbar = () => {
 
@@ -26,6 +26,15 @@ const Navbar = () => {
           </ul>
         </div>
         <div className={styles.right}>
+           {
+              items.length>0 && (
+                 <Link to="/basket">
+                    <Button  variant="solid" colorScheme="pink">
+                       Basket ({items.length})
+                    </Button>
+                 </Link>
+              )
+           }
             {
                 loggedIn ? (
                     <>
@@ -34,15 +43,6 @@ const Navbar = () => {
                              <Button variant="solid" colorScheme="red">Admin</Button>
                           </Link>)
                        }
-                        {
-                            items.length>0 && (
-                                <Link to="/basket">
-                                    <Button  variant="solid" colorScheme="pink">
-                                        Basket ({items.length})
-                                    </Button>
-                                </Link>
-                            )
-                        }
                         <Link to="/profile">
                             <Button  variant="solid" colorScheme="facebook">Profile</Button>
                         </Link>

@@ -1,5 +1,5 @@
-import {useAuth} from '../../Contexts/AuthContext'
-import {Button, Flex, Heading, Text} from '@chakra-ui/react'
+import { useAuth } from '../../Contexts/AuthContext';
+import { Button, Flex, Heading, Text } from '@chakra-ui/react';
 
 const Profile = ({history}) => {
 

@@ -7,14 +7,14 @@ const ProdectedRoute = ({component:Component,admin,...rest}) => {
     return (
         <Route {...rest} render={(props) => {
 
-           if (admin && user.role !== 'admin') {
-              return <Redirect to={{pathname:"/"}} />
+           if (admin  && user?.role !== 'admin') {
+              return <Redirect to={{pathname:"/unauthorized"}} />
            }
 
             if(loggedIn) {
                 return <Component {...props} />;
             }
-            return <Redirect to={{pathname:"/"}} />
+            return <Redirect to={{pathname:"/unauthorized"}} />
         }} />
     )
 

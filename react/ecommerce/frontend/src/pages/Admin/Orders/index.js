@@ -1,15 +1,15 @@
 import { useQuery } from 'react-query';
 import { fetchOrders } from '../../../api';
 import {
+	Flex,
+	Heading,
 	Table,
-	Thead,
-	Tbody,
-	Tr,
-	Th,
-	Td,
 	TableCaption,
-	Text,
-	Flex, Heading,
+	Tbody,
+	Td,
+	Th,
+	Thead,
+	Tr,
 } from '@chakra-ui/react';
 
 const Orders = () => {

@@ -11,6 +11,7 @@ import ProtectedRoute from './pages/ProtectedRoute'
 import Basket from './pages/Basket'
 import Error404 from './pages/Error404';
 import Admin from "./pages/Admin"
+import Unauthorized from './pages/Unauthorized';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
               <Route path="/login" component={Signin} />
               <Route path="/signup" component={Signup} />
               <Route path="/basket" component={Basket} />
+              <Route path="/unauthorized" component={Unauthorized} />
               <Route path="/product/:product_id" component={ProductDetail} />
               <ProtectedRoute path="/profile" component={Profile} />
               <ProtectedRoute path="/admin" component={Admin} admin />

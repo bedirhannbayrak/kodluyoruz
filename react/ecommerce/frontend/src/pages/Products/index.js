@@ -1,8 +1,8 @@
-import React from 'react'
-import Card from '../../components/Card'
-import {Box, Button, Flex, Grid} from '@chakra-ui/react'
-import {useInfiniteQuery} from 'react-query'
-import {fetchProductList} from '../../api'
+import React from 'react';
+import Card from '../../components/Card';
+import { Box, Button, Flex, Grid } from '@chakra-ui/react';
+import { useInfiniteQuery } from 'react-query';
+import { fetchProductList } from '../../api';
 
 const Products = () => {
 

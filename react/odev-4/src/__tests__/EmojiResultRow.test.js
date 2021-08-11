@@ -1,7 +1,7 @@
 import React from 'react'
 import {render,screen} from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import EmojiResultRow from './EmojiResultRow'
+import EmojiResultRow from '../EmojiResultRow'
 
 const emojiData = {
   "title": "100",

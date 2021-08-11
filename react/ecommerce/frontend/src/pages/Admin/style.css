@@ -1,0 +1,25 @@
+.admin-menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.admin-menu>li>a{
+	width: 100%;
+	margin-right: .5rem;
+	display:block;
+	text-align: center;
+	border-radius: 10px;
+	color:white;
+	padding : .5rem 1rem;
+}
+
+.admin-menu>li{
+	width: 100%;
+	margin-right: .5rem;
+	flex:1;
+	text-align: center;
+	border-radius: 10px;
+	color:white;
+}

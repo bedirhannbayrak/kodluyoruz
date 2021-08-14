@@ -32,7 +32,6 @@ function App() {
               <Route path="*" component={Error404} />
             </Switch>
           </div>
-
         </div>
       </Router>
   );

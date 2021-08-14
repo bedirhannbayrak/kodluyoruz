@@ -1,9 +1,9 @@
-import { Link, Route, Switch, useRouteMatch } from 'react-router-dom';
+import {Link, Route, Switch, useRouteMatch} from 'react-router-dom';
 import './style.css';
 import Products from './Products';
 import Orders from './Orders';
 import ProductDetail from './ProductDetail';
-import { Flex } from '@chakra-ui/react';
+import {Flex} from '@chakra-ui/react';
 import AddProduct from './Products/AddProduct';
 
 const Admin = () => {
